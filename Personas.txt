@@ -1,0 +1,40 @@
+Mutter Theresa Müller
+	Alter: 55
+	Beruf: Zahnmedizinische Fachangestellte
+	Gehalt: 36.000€
+	
+	About
+		Arbeiten
+		Kochen
+		Sport
+		Kinder
+		
+	Motivation
+		Kochmenge
+	Ziele
+		Angemessene Menge kochen
+    Wissen wann ist wer zuhause
+	Verhalten
+		Benutzt Smartphone
+	Herausforderungen
+		nicht Technikaffin 
+--------------------------------------------------------------------------------------------------------------------
+
+Tochter: Hannah Müller
+	Alter: 14-16
+	Beruf: Schüler
+	Gehalt: 0€
+	
+	About
+		Schule
+		Dudelsack spielen
+		Sport
+	Motivation
+		Mutter soll nicht nerven
+	Ziele
+		Angeben wann zuhause und wann nicht
+		Nicht jeden Tag Funktionalität der App erklären
+	Verhalten
+		Smartphone
+	Herausforderungen
+    Gereizt von langen Ladezeiten

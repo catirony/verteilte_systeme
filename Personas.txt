@@ -1,4 +1,23 @@
 Mutter Theresa Müller
+
+    /""'
+   |""oo\
+   c"  . |
+   |\  ~/
+   $ ) /
+    /`\\
+   || |Y|
+   || |:|
+   || |:|
+   ||_|:|
+   \(_) /
+|~~~`-`~~~|
+|_________|
+|_________|
+    | ||
+    |_||__
+    (____))
+
 	Alter: 55
 	Beruf: Zahnmedizinische Fachangestellte
 	Gehalt: 36.000€
@@ -13,7 +32,7 @@ Mutter Theresa Müller
 		Kochmenge
 	Ziele
 		Angemessene Menge kochen
-    Wissen wann ist wer zuhause
+    		Wissen wann ist wer zuhause
 	Verhalten
 		Benutzt Smartphone
 	Herausforderungen
@@ -21,7 +40,18 @@ Mutter Theresa Müller
 --------------------------------------------------------------------------------------------------------------------
 
 Tochter: Hannah Müller
-	Alter: 14-16
+
+     #####
+    #### _\_  ________
+    ##=-[.].]| \      \
+    #(    _\ |  |------|
+     #   __| |  ||||||||
+      \  _/  |  ||||||||
+   .--'--'-. |  | ____ |
+  / __      `|__|[o__o]|
+_(____nm_______ /____\____
+
+	Alter: 16
 	Beruf: Schüler
 	Gehalt: 0€
 	

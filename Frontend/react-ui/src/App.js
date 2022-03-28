@@ -1,45 +1,22 @@
 import logo from "./logo.svg";
 import "./App.css";
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Offcanvas,
-  Form,
-  FormControl,
-  Button,
-  Row,
-  Breadcrumb,
-} from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Offcanvas, Form, FormControl, Button, Row, Col, Breadcrumb } from "react-bootstrap";
 
 function App() {
   return (
     <div>
-      <Navbar bg="light" expand={false}>
+      <Navbar bg="info" expand={false}>
         <Container fluid>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Brand href="#">Name der Applikation</Navbar.Brand>
-          <Navbar.Offcanvas
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-            placement="start"
-          >
+          <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">
-                Navbar
-              </Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel">Navbar</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Form className="d-flex">
-                  <FormControl
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
+                  <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" />
                   <Button variant="outline-success">Search</Button>
                 </Form>
                 <Nav.Link href="#action1">Aktualisieren</Nav.Link>
@@ -50,16 +27,17 @@ function App() {
                   <NavDropdown.Item href="#action2">Tag</NavDropdown.Item>
                   <NavDropdown.Item href="#action3">Woche</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Monat</NavDropdown.Item>
-                  <NavDropdown.Item href="#action5">
-                    Alle Termine
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action5">Alle Termine</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action6">
-                    Neuen Termin anlegen
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action6">Neuen Termin anlegen</NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link className="nav-link" to="/settings">
+                  Einstellungen
+                </Nav.Link>
+                <Nav.Link className="nav-link" to="/">
+                  Logout
+                </Nav.Link>
               </Nav>
-              <img src="Frontend/react-ui/node_modules/bootstrap-icons/icons/bootstrap.svg"></img>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
@@ -96,14 +74,13 @@ function App() {
             </Form.Group>
           </Col>
           <Col>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Passwort bestätigen</Form.Label>
+            <Form.Group className="pt-4" controlId="formBasicPassword">
               <Form.Control type="password" placeholder="Passwort bestätigen" />
             </Form.Group>
           </Col>
         </Row>
 
-        <Button href="#" variant="primary" type="submit">
+        <Button className="mb-1" href="#" variant="primary" type="submit">
           Registrieren
         </Button>
 
@@ -111,6 +88,12 @@ function App() {
           <Breadcrumb.Item href="#">Login</Breadcrumb.Item>
         </Breadcrumb>
       </Form>
+
+      <footer class="py-4 bg-info fixed-bottom">
+        <div class="container">
+          <p class="m-0 text-center text-white">Hier koennte Ihre Werbung stehen</p>
+        </div>
+      </footer>
     </div>
   );
 }

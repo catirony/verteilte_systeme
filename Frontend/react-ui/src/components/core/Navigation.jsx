@@ -24,7 +24,7 @@ function Navigation() {
                 Statistiken
               </Nav.Link>
               <Nav.Link className="nav-link" to="/administration">
-                Familie verwalten
+                Gruppen verwalten
               </Nav.Link>
 
               <NavDropdown title="Termine" id="offcanvasNavbarDropdown">

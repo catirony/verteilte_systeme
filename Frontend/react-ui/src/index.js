@@ -1,16 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Navigation, Footer, RegistrationForm, LoginForm } from "./components";
+import { Navigation, Footer, SignupForm, LoginForm } from "./components";
 
 ReactDOM.render(
   <Router>
     <Navigation />
-    <LoginForm />
+    <Routes>
+      <Route path="/" element={<SignupForm />} />
+      <Route path="/login" element={<LoginForm />} />
+    </Routes>
     <Footer />
   </Router>,
   document.getElementById("root")

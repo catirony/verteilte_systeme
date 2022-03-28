@@ -1,9 +1,17 @@
 import React from "react";
 import { Form, FormControl, Button, Row, Col, Breadcrumb } from "react-bootstrap";
+import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function LoginForm() {
+  let { postSlug } = useParams();
+
+  useEffect(() => {
+    // Fetch post using the postSlug
+  }, [postSlug]);
+
   return (
-    <Form className="w-50 position-absolute top-50 start-50 translate-middle">
+    <Form className="login w-50 position-absolute top-50 start-50 translate-middle">
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>E-Mail Adresse</Form.Label>
         <Form.Control type="email" placeholder="E-Mail Adresse eingeben" />
@@ -19,7 +27,9 @@ function LoginForm() {
       </Button>
 
       <Breadcrumb>
-        <Breadcrumb.Item href="#">Registrieren</Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Link to="/">Registrieren</Link>
+        </Breadcrumb.Item>
       </Breadcrumb>
     </Form>
   );

@@ -1,9 +1,18 @@
 import React from "react";
 import { Form, FormControl, Button, Row, Col, Breadcrumb } from "react-bootstrap";
+import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
+import { NavLink } from "react-bootstrap";
 
-function RegistrationForm() {
+function SignupForm() {
+  let { postSlug } = useParams();
+
+  useEffect(() => {
+    // Fetch post using the postSlug
+  }, [postSlug]);
+
   return (
-    <Form className="w-50 position-absolute top-50 start-50 translate-middle">
+    <Form className="signup w-50 position-absolute top-50 start-50 translate-middle">
       <Row>
         <Col>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -34,7 +43,8 @@ function RegistrationForm() {
           </Form.Group>
         </Col>
         <Col>
-          <Form.Group className="pt-4" controlId="formBasicPassword">
+          <Form.Group className="py-2" controlId="formBasicPassword">
+            <Form.Label></Form.Label>
             <Form.Control type="password" placeholder="Passwort bestätigen" />
           </Form.Group>
         </Col>
@@ -45,10 +55,12 @@ function RegistrationForm() {
       </Button>
 
       <Breadcrumb>
-        <Breadcrumb.Item href="#">Login</Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Link to="/login">Login</Link>
+        </Breadcrumb.Item>
       </Breadcrumb>
     </Form>
   );
 }
 
-export default RegistrationForm;
+export default SignupForm;

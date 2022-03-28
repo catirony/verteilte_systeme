@@ -4,13 +4,14 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Navigation, Footer, SignupForm, LoginForm } from "./components";
+import { Navigation, Footer, SignupForm, LoginForm, CalendarView } from "./components";
 
 ReactDOM.render(
   <Router>
     <Navigation />
+    <CalendarView />
     <Routes>
-      <Route path="/" element={<SignupForm />} />
+      <Route path="/signup" element={<SignupForm />} />
       <Route path="/login" element={<LoginForm />} />
     </Routes>
     <Footer />

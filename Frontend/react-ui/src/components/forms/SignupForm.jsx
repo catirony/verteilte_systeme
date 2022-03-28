@@ -1,8 +1,6 @@
-import React from "react";
-import { Form, FormControl, Button, Row, Col, Breadcrumb } from "react-bootstrap";
+import { React, useEffect } from "react";
+import { Form, Button, Row, Col, Breadcrumb } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
-import { useEffect } from "react";
-import { NavLink } from "react-bootstrap";
 
 function SignupForm() {
   let { postSlug } = useParams();
@@ -12,7 +10,7 @@ function SignupForm() {
   }, [postSlug]);
 
   return (
-    <Form className="signup w-50 position-absolute top-50 start-50 translate-middle">
+    <Form className="w-50 position-absolute top-50 start-50 translate-middle">
       <Row>
         <Col>
           <Form.Group className="mb-3" controlId="formBasicEmail">

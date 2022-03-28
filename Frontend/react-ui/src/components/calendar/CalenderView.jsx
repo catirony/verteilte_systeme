@@ -5,7 +5,7 @@ import "./css/Calendar.css";
 function CalendarView() {
   const [value, onChange] = useState(new Date());
 
-  return <Calendar className="position-absolute top-50 start-50 translate-middle" onChange={onChange} value={value} />;
+  return <Calendar className="w-50" onChange={onChange} value={value} />;
 }
 
 export default CalendarView;

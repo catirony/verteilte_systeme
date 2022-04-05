@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import { Form, Button, Breadcrumb } from "react-bootstrap";
+import { Form, Button, Breadcrumb, Row, Container } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
 
 function LoginForm() {
@@ -10,27 +10,31 @@ function LoginForm() {
   }, [postSlug]);
 
   return (
-    <Form xs={12} md={8} className="position-absolute top-50 start-50 translate-middle px-2">
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>E-Mail Adresse</Form.Label>
-        <Form.Control type="email" placeholder="E-Mail Adresse eingeben" />
-      </Form.Group>
+    <Container>
+      <Row className="justify-content-center">
+        <Form md={8}>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>E-Mail Adresse</Form.Label>
+            <Form.Control type="email" placeholder="E-Mail Adresse eingeben" />
+          </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Passwort</Form.Label>
-        <Form.Control type="password" placeholder="Passwort" />
-      </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Passwort</Form.Label>
+            <Form.Control type="password" placeholder="Passwort" />
+          </Form.Group>
 
-      <Button className="mb-1" href="#" variant="primary" type="submit">
-        Login
-      </Button>
+          <Button className="mb-1" href="#" variant="primary" type="submit">
+            Login
+          </Button>
 
-      <Breadcrumb>
-        <Breadcrumb.Item>
-          <Link to="/signup">Registrieren</Link>
-        </Breadcrumb.Item>
-      </Breadcrumb>
-    </Form>
+          <Breadcrumb>
+            <Breadcrumb.Item>
+              <Link to="/signup">Registrieren</Link>
+            </Breadcrumb.Item>
+          </Breadcrumb>
+        </Form>
+      </Row>
+    </Container>
   );
 }
 

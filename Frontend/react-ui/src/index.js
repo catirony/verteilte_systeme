@@ -20,7 +20,6 @@ ReactDOM.render(
 
       <Route path="/devGroupSettings" element={<GroupSettings />} />
     </Routes>
-    <Footer />
   </Router>,
   document.getElementById("root")
 );

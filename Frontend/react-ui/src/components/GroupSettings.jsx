@@ -1,8 +1,8 @@
 import { React, useEffect } from "react";
-import { Form, Button, Row, Col, Breadcrumb } from "react-bootstrap";
+import { Card, Form, Row, Col, Button, Breadcrumb } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
 
-function SignupForm() {
+function GroupSettings() {
   let { postSlug } = useParams();
 
   useEffect(() => {
@@ -10,7 +10,7 @@ function SignupForm() {
   }, [postSlug]);
 
   return (
-    <Form className="w-100 position-absolute top-50 start-50 translate-middle px-2">
+    <Form className="px-2">
       <Row>
         <Col>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -61,4 +61,4 @@ function SignupForm() {
   );
 }
 
-export default SignupForm;
+export default GroupSettings;

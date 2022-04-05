@@ -23,7 +23,7 @@ function Navigation() {
               <Nav.Link className="nav-link" to="/statistics">
                 Statistiken
               </Nav.Link>
-              <Nav.Link className="nav-link" to="/administration">
+              <Nav.Link className="nav-link" href="/groupAdministration">
                 Gruppen verwalten
               </Nav.Link>
 
@@ -35,10 +35,10 @@ function Navigation() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/createNewEvent">Neuen Termin anlegen</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="nav-link" to="/settings">
+              <Nav.Link className="nav-link" href="/settings">
                 Einstellungen
               </Nav.Link>
-              <Nav.Link className="nav-link" to="/">
+              <Nav.Link className="nav-link" href="/">
                 Logout
               </Nav.Link>
             </Nav>

@@ -10,7 +10,7 @@ function LoginForm() {
   }, [postSlug]);
 
   return (
-    <Form className="w-50 position-absolute top-50 start-50 translate-middle">
+    <Form xs={12} md={8} className="position-absolute top-50 start-50 translate-middle px-2">
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>E-Mail Adresse</Form.Label>
         <Form.Control type="email" placeholder="E-Mail Adresse eingeben" />

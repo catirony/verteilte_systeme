@@ -5,7 +5,7 @@ import "./css/Calendar.css";
 function CalendarView() {
   const [value, onChange] = useState(new Date());
 
-  return <Calendar className="w-50" onChange={onChange} value={value} />;
+  return <Calendar className="" onChange={onChange} value={value} />;
 }
 
 export default CalendarView;

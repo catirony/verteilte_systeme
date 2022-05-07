@@ -7,3 +7,4 @@ export { default as EventForm } from "./forms/EventForm";
 export { default as SettingsForm } from "./forms/SettingsForm";
 export { default as GroupAdministration } from "./GroupAdministration";
 export { default as GroupSettings } from "./GroupSettings";
+export { default as CalendarOne } from "./calendar/CalendarOne";

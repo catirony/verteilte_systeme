@@ -3,9 +3,19 @@ import Calendar from "react-calendar";
 import "./css/Calendar.css";
 
 function CalendarView() {
-  const [value, onChange] = useState(new Date());
+  const [date, setDate] = useState(new Date());
 
-  return <Calendar className="" onChange={onChange} value={value} />;
+  const onChange = (date) => {
+    setDate(date);
+  };
+
+  return (
+    <div>
+      <Calendar onChange={onChange} value={date} />
+      {console.log(date)}
+      {date.toString()}
+    </div>
+  );
 }
 
 export default CalendarView;

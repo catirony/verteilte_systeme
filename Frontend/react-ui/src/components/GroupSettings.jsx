@@ -3,12 +3,6 @@ import { Card, Form, Row, Col, Button, Breadcrumb, InputGroup, FormControl, List
 import { useParams, Link } from "react-router-dom";
 
 function GroupSettings() {
-  let { postSlug } = useParams();
-
-  useEffect(() => {
-    // Fetch post using the postSlug
-  }, [postSlug]);
-
   return (
     <Form className="px-2">
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -47,7 +41,11 @@ function GroupSettings() {
       </Form.Group>
 
       <InputGroup className="mb-3">
-        <FormControl placeholder="Nach Name oder E-Mail suchen" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <FormControl
+          placeholder="Nach Name oder E-Mail suchen"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
         <Button id="button-addon2">Teilnehmer hinzufügen</Button>
       </InputGroup>
 

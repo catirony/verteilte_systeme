@@ -55,7 +55,8 @@ function CalendarOne() {
   }
 
   return (
-    <div>
+    <div className="border d-flex flex-column align-items-center justify-content-center">
+      <h1>Kalender</h1>
       <Calendar
         localizer={localizer}
         events={allEvents}
@@ -63,7 +64,6 @@ function CalendarOne() {
         endAccessor="end"
         style={{ height: 500, margin: "50px" }}
       />
-      <h1>Kalender</h1>
       <h2>Neues Event</h2>
 
       <div>

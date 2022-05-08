@@ -11,7 +11,6 @@ import {
   LoginForm,
   EventForm,
   SettingsForm,
-  CalendarView,
   GroupAdministration,
   GroupSettings,
   CalendarOne,
@@ -26,7 +25,6 @@ ReactDOM.render(
       <Route path="/login" element={<LoginForm />} />
       <Route path="/createNewEvent" element={<EventForm />} />
       <Route path="/" element={<CalendarOne />} />
-      <Route path="/abcdf" element={<CalendarView />} />
       <Route path="/settings" element={<SettingsForm />} />
       <Route path="/groupAdministration" element={<GroupAdministration />} />
 

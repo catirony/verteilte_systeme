@@ -3,12 +3,6 @@ import { Card } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
 
 function SettingsForm() {
-  let { postSlug } = useParams();
-
-  useEffect(() => {
-    // Fetch post using the postSlug
-  }, [postSlug]);
-
   return (
     <div className="px-2">
       <h2>Einstellungen</h2>

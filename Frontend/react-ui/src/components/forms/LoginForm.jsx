@@ -3,12 +3,6 @@ import { Form, Button, Breadcrumb, Row, Container } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
 
 function LoginForm() {
-  let { postSlug } = useParams();
-
-  useEffect(() => {
-    // Fetch post using the postSlug
-  }, [postSlug]);
-
   return (
     <Container>
       <Row className="justify-content-center">

@@ -4,12 +4,6 @@ import { Form, InputGroup, FormControl, Button, Breadcrumb } from "react-bootstr
 import { useParams, Link } from "react-router-dom";
 
 function EventForm() {
-  let { postSlug } = useParams();
-
-  useEffect(() => {
-    // Fetch post using the postSlug
-  }, [postSlug]);
-
   return (
     <div>
       <h2 className="px-2">Titel des Termins</h2>
